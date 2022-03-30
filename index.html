@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <!-- this is the top bar -->
+        <div class="nav">
+            <h1 class="nav-title">Profile</h1>
+            <ul class="nav-links">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#" class="active">My Profile</a></li>
+                <li><a href="#" class="active">Find Connections</a></li>
+                <li><button class="btn">Sign Out</button></li>
+            </ul>
+        </div>
+        <!-- this is the jane doe, light blue thing -->
+        <div class="container">
+            <div class="top-bar">
+            </div>
+            <div class="text">
+                <img src="user-circle.png" alt="blank picture of user" class="img_1">
+                <h1 id="h11">Jane Doe</h1>
+                <img src="map-marker.png" alt="Picture of the map symbol" class="img_2">
+                <p class="text_1">Seattle</p>
+                <p class="text_2">Developer | Engineer | Problem Solver</p>
+                <p class="text_2">Master of shadows and the Internet!</p>
+                <a href="#" onclick="name1()"><img src="gear.png" alt="gear symbol" class="img_3"></a>
+                <a href="#" class="text_3" onclick="name1()">edit profile</a>
+            </div>
+        </div>
+        <!-- top left connection requests -->
+        <div class="top-left">
+            <div class="top-bar1">
+                <button class="but1" id="butt1">2</button>
+                <p class="t1text">Connection Requests</p>
+                
+            </div>
+            <div class="people1" id="myDiv">
+                <img src="user-circle.png" alt="Profile Pic of Todd" class="img_peeps">
+                <p class="peeps_text">Todd E.</p>
+                <img src="accept-circle.png" alt="Accept" class="circle1" onclick="remove1(), add(), minus()" id="todda">
+                <img src="close-circle.png" alt="Decline" class="circle2" onclick="remove1(), minus()" id="toddc">
+
+            </div>
+            <div class="people2" id="myDiv2">
+                <img src="user-circle.png" alt="Profile Pic of Phil" class="img_peeps">
+                <p class="peeps_text">Phil E.</p>
+                <img src="accept-circle.png" alt="Accept" class="circle1" onclick="remove2(), add(), minus()" id="phila">
+                <img src="close-circle.png" alt="Decline" class="circle2" onclick="remove2(), add(), minus()" id="phillc">
+            </div>
+        </div>
+        <!-- your connections -->
+        <div class="middle">
+            <div class="top_bar2">
+                <button class="but_2" id="butt2">500+</button>
+                <p class="your">Your Connections</p>
+            </div>
+            <div class="people3">
+                <img src="user-circle.png" alt="Profile Pic" class="img_peeps">
+                <p class="peeps_text">Adrien D</p>
+            </div>
+            <div class="people4">
+                <img src="user-circle.png" alt="Profile Pic" class="img_peeps">
+                <p class="peeps_text">Anne J</p>
+            </div>
+            <div class="people5">
+                <img src="user-circle.png" alt="Profile Pic" class="img_peeps">
+                <p class="peeps_text">Alayne T</p>
+            </div>
+            <div class="people6">
+                <img src="user-circle.png" alt="Profile Pic" class="img_peeps">
+                <p class="peeps_text">Arry Y</p>
+            </div>
+            <div class="bottom_bar1">
+                <a href="#" class="view">View More</a>
+            </div>
+        </div>
+        <!-- education -->
+        <div class="bottom">
+            <div class="top_bar_3">
+                <h3>Education</h3>
+            </div>
+            <div class="d1">
+            <p class="t1">Coding Dojo - FUll Stack Bootcamp</p>
+        </div>
+        <div class="d2">
+            <p class="t2">Dec 2019 - Mar 2020</p>
+        </div>
+        <div class="d3">
+            <p class="t3">Triple black belt in Python, MERN, and C# ...</p>
+        </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
